@@ -1,0 +1,11 @@
+<ng-container *ngTemplateOutlet="dynamic; context: {items: items}"></ng-container>
+<ng-template #dynamic let-items="items">
+    <div class="example-container">
+        <div class="example-list" [sortablejs]="items" [sortablejsOptions]="options">
+            <div class="example-box" *ngFor="let item of items">
+                <div class="item-title">{{ item.id }}</div>
+                <ng-container *ngTemplateOutlet="dynamic; context: {items: item.children}"></ng-container>
+            </div>
+        </div>
+    </div>
+</ng-template>

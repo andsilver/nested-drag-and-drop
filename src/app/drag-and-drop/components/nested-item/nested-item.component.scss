@@ -1,0 +1,31 @@
+.example-container {
+  width: 400px;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.example-list {
+  background-color: rgba($color: blue, $alpha: 0.3);
+  border: dashed 1px #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+  padding: 2px;
+}
+
+.example-box {
+  padding: 20px 10px;
+  border: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  box-sizing: border-box;
+  cursor: move;
+  background: white;
+  font-size: 14px;
+}
+
+
+.item-title {
+    padding: 4px 2px;
+    font-weight: bold;
+}
